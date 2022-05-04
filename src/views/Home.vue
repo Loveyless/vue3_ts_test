@@ -10,19 +10,10 @@
 
 <script lang="ts">
 import HelloWorld from "@/components/HelloWorld.vue";
-import { ref, defineComponent } from "vue";
-export default defineComponent({
-  setup() {
-    let a = ref<number>(1);
+import { ref } from "vue";
 
-    a.value = "哈哈";
+let a = ref<number>(1);
 
-    return {
-      a,
-    };
-  },
-  components: {
-    HelloWorld,
-  },
-});
+a.value = "哈哈";
+
 </script>
